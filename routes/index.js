@@ -32,7 +32,7 @@ router.get("/users/:user", (req, res) => {
   Utilizando Express crear una ruta que reciba como parámetro un número y nos muestre en pantalla el mismo número multiplicado por 2
  */
 
-router.get(`/number/:number`, (req, res) => {
+router.get(`/numbers/:number`, (req, res) => {
   NumberInstance.getNumber(req, res);
 });
 
