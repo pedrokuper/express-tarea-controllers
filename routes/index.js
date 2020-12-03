@@ -23,7 +23,7 @@ router.get("/", (req, res) => {
 - Pasarle por query nuestra edad y mostrarla también
  */
 
-router.get("/usuarios/:name", (req, res) => {
+router.get("/users/:user", (req, res) => {
   UserInstance.getUser(req, res);
 });
 

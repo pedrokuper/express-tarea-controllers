@@ -1,6 +1,6 @@
 class UserController {
   getUser(req, res) {
-    res.send(`El ususario ${req.params.name} tiene ${req.query.age} años`);
+    res.send(`El ususario ${req.params.user} tiene ${req.query.age} años`);
   }
 }
 
