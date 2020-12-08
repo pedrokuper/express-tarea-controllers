@@ -6,15 +6,21 @@ const router = express.Router();
 const UserController = require("../controllers/UserController");
 const NumberController = require("../controllers/NumberController");
 const PalindromeController = require("../controllers/PalindromeController");
+const DataController = require("../controllers/DataController");
 
 //~Instances
 
 const UserInstance = new UserController();
 const NumberInstance = new NumberController();
 const PalindromeInstance = new PalindromeController();
+const DataInstance = new DataController();
 
 router.get("/", (req, res) => {
-  res.send("Este es el punto de entrada a mi página");
+  res.send("punto de entrada ");
+});
+
+router.get("/users/:userid", (req, res) => {
+  DataInstance.getUserId(req, res);
 });
 
 /*
